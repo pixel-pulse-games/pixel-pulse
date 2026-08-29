@@ -1,0 +1,29 @@
+name: Generate Directory Listing and Zip Site
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  build-and-archive:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Generate Directory Listings
+        uses: gacts/directory-listing@v1
+        with:
+          path: .
+
+      - name: Create Full Site Zip Archive
+        run: |
+          zip -r full-site-archive.zip . -x "*.git*"
+
+      - name: Upload Full Site Zip Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: full-site-zip
+          path: full-site-archive.zip
