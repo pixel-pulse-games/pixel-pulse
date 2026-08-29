@@ -1,0 +1,13 @@
+ℹ️ Hey There is a new version out [v0.0.2](https://github.com/pixel-pulse-labs/Cob/releases/tag/v0.0.2) available, we recommend upgrading to that version.
+Cob Language -- Project Obsidian Falcon
+
+Corn-themed.
+
+This release ships `cob_interp`, the v0.0.1 interpreter. Its scope is
+intentionally narrow: `pop("text")` is the one fully working statement.
+`while`, `set`, `shuck`, `harvest`, and `trash` are recognized by the
+parser but not yet executed.
+
+Binaries are provided for Windows, Linux, and macOS across
+amd64/386/arm64/arm as applicable. Verify downloads against
+checksums.txt in this release.
