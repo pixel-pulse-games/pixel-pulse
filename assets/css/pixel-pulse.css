@@ -1,0 +1,18 @@
+/* Pixel-Pulse additions to the Strongly Typed template. Loaded after main.css. */
+.image.featured img.pixel{height:auto;aspect-ratio:1;image-rendering:pixelated}
+/* the template's banner used a demo photo we are not allowed to ship: use a calm solid slate instead */
+#banner{background:#2f3a4a;background-image:linear-gradient(rgba(255,255,255,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.06) 1px,transparent 1px);background-size:24px 24px}
+pre.code{background:#2f3a4a;color:#e8eef4;padding:1.25em 1.5em;margin:0 0 2em 0;overflow-x:auto;border-radius:6px;font-size:.95em;line-height:1.7}
+pre.code code{background:none;padding:0;color:inherit}
+.feature-text{min-height:5.5em}
+img.tiles{display:block;width:100%;height:auto;image-rendering:pixelated;border:2px solid #e5e5e5;border-radius:4px}
+figcaption{font-size:.9em;text-align:center;margin:.75em 0 0}
+figure{margin:0 0 3em 0}
+.lead-col h3{margin-bottom:.5em}
+.lead-col pre.code{margin-top:1.25em}
+.lead-col .actions{margin-top:1.5em}
+.lead-col p,.lead-col pre.code{text-align:left}
+#features .lead-col p{text-align:left}
+#features .lead-col pre.code,#features .lead-col pre.code code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;white-space:pre;text-align:left}
+#install-linux pre.code{text-align:left;white-space:pre;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;font-size:.85em}
+#install-linux p{text-align:left}
